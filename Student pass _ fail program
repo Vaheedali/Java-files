@@ -1,0 +1,24 @@
+package if_else;
+
+import java.util.Scanner;
+
+public class pass_fail {
+public static void main(String[] args)
+{
+	Scanner X=new Scanner(System.in);
+	int eng,maths,tel,hindi,computer;
+	System.out.println("enter eng,maths,tel,hindi,computer marks:");
+	eng= X.nextInt();
+	maths=X.nextInt();
+	tel=X.nextInt();
+	hindi=X.nextInt();
+	computer=X.nextInt();
+	if(eng<35 || maths<35 || tel<35 || hindi<35 || computer<35)
+			{
+		System.out.println("The student is fail");
+			}
+	else {
+		System.out.println("The student is pass ");
+	}
+}
+}

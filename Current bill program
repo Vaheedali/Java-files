@@ -1,0 +1,77 @@
+package else_if;
+
+import java.util.Scanner;
+
+public class current_bill {
+		public static void main(String[] args)
+		{
+			Scanner X =new Scanner(System.in);
+		 int user_id,previous_readings,current_readings,usage_units,Amount;
+		 System.out.println("enter user id");
+		 user_id=X.nextInt();
+		 System.out.println("enter previous_readings");
+		 previous_readings = X.nextInt();
+		 System.out.println("enter current_readings");
+		 current_readings=X.nextInt();
+		 usage_units =current_readings-previous_readings;
+		 if(usage_units>=0 && usage_units<=50)
+		 {
+			 System.out.println("---------- Power Bill -------"
+					                  + "\n user_id          \t=\t"+ user_id
+					                  + "\n previous_readings\t=\t"+ previous_readings
+					                  + "\n current_readings \t=\t" + current_readings
+					                  + "\n usage_units      \t=\t" + usage_units
+					                  + "\n amount           \t=\t free")	;	 
+		 }
+		 else if (usage_units>=51 && usage_units>=100)
+		 {
+			 Amount = usage_units*2;
+			 System.out.println("--------- power bill--------"
+					 + "\n user_id \t=\t" + user_id
+					 + "\n previous_readings \t=\t" + previous_readings
+					 + "\n current_readings \t=\t" + current_readings
+					 + "\n usage_units \t=\t" + usage_units
+					 + "\n amount \t=\t" + Amount);
+		 }
+		 else if (usage_units>=101 && usage_units>=150)
+		 {
+			 Amount = usage_units*3;
+			 System.out.println("--------- power bill--------"
+					 + "\n user_id \t=\t" + user_id
+					 + "\n previous_readings \t=\t" + previous_readings
+					 + "\n current_readings \t=\t" + current_readings
+					 + "\n usage_units \t=\t" + usage_units
+					 + "\n amount \t=\t" + Amount);
+		 }
+		 
+		 else if (usage_units>=151 && usage_units>=300)
+		 {
+			 Amount = usage_units*4;
+			 System.out.println("--------- power bill--------"
+					 + "\n user_id \t=\t" + user_id
+					 + "\n previous_readings \t=\t" + previous_readings
+					 + "\n current_readings \t=\t" + current_readings
+					 + "\n usage_units \t=\t" + usage_units
+					 + "\n amount \t=\t" + Amount);
+		 }
+		 
+		 else if (usage_units>=301 && usage_units>=500)
+		 {
+			 Amount = usage_units*4;
+			 System.out.println("--------- power bill--------"
+					 + "\n user_id \t=\t" + user_id
+					 + "\n previous_readings \t=\t" + previous_readings
+					 + "\n current_readings \t=\t" + current_readings
+					 + "\n usage_units \t=\t" + usage_units
+					 + "\n amount \t=\t" + Amount);
+		 }
+			
+		 else {
+			 System.out.println("you entered usage units is wrong . please enter the correct usage between the range of 0 to 500");
+		 }
+		}
+
+	}
+	  
+
+
